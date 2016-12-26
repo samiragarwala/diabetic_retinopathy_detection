@@ -1,3 +1,4 @@
+Taken from: http://archive.ics.uci.edu/ml/datasets/Diabetic+Retinopathy+Debrecen+Data+Set# 
 @relation dr
 
 @attribute 0 numeric
