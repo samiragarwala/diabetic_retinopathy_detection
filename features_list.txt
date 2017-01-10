@@ -1,0 +1,20 @@
+Quality
+Abnormality Prescence
+MA Detection 0.5
+MA Detection 0.6
+MA Detection 0.7
+MA Detection 0.8
+MA Detection 0.9
+MA Detection 1
+Exudates 0.3
+Exudates 0.4
+Exudates 0.5
+Exudates 0.6
+Exudates 0.7
+Exudates 0.8
+Exudates 0.9
+Exudates 1
+Euclidean Distance
+Diameter of Optic Disk
+AM/FM Classification
+Class Label
