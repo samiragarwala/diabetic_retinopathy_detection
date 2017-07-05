@@ -1,16 +1,20 @@
 import arff, numpy as np
 import sys
 import csv
+import pandas 
 
 def arff_to_numpy() :
 	dataset = arff.load(open(sys.argv[1], 'rb'))
 	data = np.array(dataset['data'])
-	print(data)
-	np.random.shuffle(data)
-	print(data)
-	train_feature= data[0:920,0:19]
+	#print(data)
+	#np.random.shuffle(data)
+	#print(data)
+
+	
+
+	train_feature= data[0:920,0:18]
 	train_label = data[0:920,19].reshape((920,1))
-	test_feature=data[920:1152,0:19]
+	test_feature=data[920:1152,0:18]
 	test_label=data[920:1152,19].reshape((231,1))
 	np.save('train_feature', train_feature, allow_pickle=True, fix_imports=True)
 	np.save('train_label', train_label, allow_pickle=True, fix_imports=True)
@@ -32,4 +36,4 @@ def features_list() :
 
 if __name__ == "__main__":
 	arff_to_numpy()
-	features_list()
+	#features_list()
